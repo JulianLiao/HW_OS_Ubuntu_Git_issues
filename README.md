@@ -3,23 +3,43 @@
 ## 电脑相关的
 G7 7590-2765
 
+```
 处理器：
     i7-9750H
         4.5GHz  6核心  12线程
+
 内存：
     16GB
+
 注意：没有机械硬盘
+
 固态硬盘：
     512GB PCIe SSD
+
 15.6英寸显示屏
     1920 × 1080 IPS 72%色域 144Hz 全高清 防眩光
+
 显卡：
     GTX 1660Ti 6GB
+```
 
-2019.07.29
-    淘宝 - 戴尔官方旗舰店: 10998.90元
-    京东 - 戴尔官方旗舰店: 10999元
+日期 | 产品 | 显卡 | cpu | 内存 | 平台 | 店铺名 | 价格
+-----|-----|------|-----|-----|------|--------|-------
+2019.07.29  |  G7 7590-2765  |  GTX 1660Ti 6GB  |  i7-9750H  |  16G(2 * 8GB)  |  512G PCIe SSD  |  淘宝  |  戴尔官方旗舰店  |  10998.90元
+2019.07.29  |  G7 7590-2765  |  GTX 1660Ti 6GB  |  i7-9750H  |  16G(2 * 8GB)  |  512G PCIe SSD  |  京东  |  戴尔官方旗舰店  |  10999元
+2019.08.23  |  G7 7590-2765  |  GTX 1660Ti 6GB  |  i7-9750H  |  16G(2 * 8GB)  |  512G PCIe SSD  |  淘宝  |  戴尔官方旗舰店  |  10998.90元
+2019.08.23  |  G7 7590-2765  |  GTX 1660Ti 6GB  |  i7-9750H  |  16G(2 * 8GB)  |  512G PCIe SSD  |  京东  |  戴尔官方旗舰店  |  11399元
+2019.08.26  |  G7 7790-2865  |  RTX 2060 6GB  |  i7-9750H  |  16G(2 * 8GB)  |  512G PCIe SSD  |  淘宝  |  戴尔官方旗舰店  |  12998
+2019.08.26  |  G7 7790-2865  |  RTX 2060 6GB  |  i7-9750H  |  16G  |  512G PCIe SSD  |  淘宝  |  戴尔蓝印专卖店  |  12499
+2019.08.26  |  G7 7590-2865  |  RTX 2060 6GB  |  i7-9750H  |  16G(2 * 8GB)  |  512G PCIe SSD  |  京东  |  戴尔官方旗舰店  |  12999元
 
+### GPU比较
+
+https://www.nvidia.com/en-us/geforce/products/10series/compare/
+
+https://www.geforce.com/hardware/compare-buy-gpus
+
+https://www.cgdirector.com/nvidia-graphics-cards-order-performance/
 
 ## sudo apt-get related issues
 a.
