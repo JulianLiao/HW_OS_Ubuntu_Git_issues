@@ -44,11 +44,32 @@ https://www.cgdirector.com/nvidia-graphics-cards-order-performance/
 ## sudo apt-get related issues
 a.
 问题描述：
+```
     The following signatures couldn't be verified because the public key is not available: NO_PUBKEY F42ED6FBAB17C654
-解决办法：
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
+```
 
+解决办法：
+```
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
+```
 
 ## 翻墙
 
 ### 如何通过.crx文件在chrome里面装上插件？
+
+## git issues
+
+a.
+问题描述：
+```
+    当执行git push origin master，提示以下错误，
+
+    remote: Permission to JulianLiao5/cpp_basics.git denied to JulianLiao.
+    fatal: unable to access 'https://github.com/JulianLiao5/cpp_basics.git/': The requested URL returned error: 403
+```
+解决办法：
+```
+    git remote set-url origin git@github.com:Julianliao5/cpp_basics.git
+```
+
+![git push error](imgs/git/git_push_error_fix.PNG "git push error")
