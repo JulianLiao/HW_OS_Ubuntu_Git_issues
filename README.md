@@ -47,3 +47,8 @@ a.
     The following signatures couldn't be verified because the public key is not available: NO_PUBKEY F42ED6FBAB17C654
 解决办法：
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
+
+
+## 翻墙
+
+### 如何通过.crx文件在chrome里面装上插件？
