@@ -53,6 +53,10 @@ a.
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
 ```
 
+## 翻墙
+
+### 如何通过.crx文件在chrome里面装上插件？
+
 ## git issues
 
 a.
