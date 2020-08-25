@@ -69,3 +69,18 @@ a.
 ```
 
 ![git push error](imgs/git/git_push_error_fix.PNG "git push error")
+
+b.
+问题描述：
+```
+    当执行git clone https://github.com/PerceptIn/ADU_Client.git，提示以下错误，
+
+    remote: Repository not found.
+    fatal: repository 'https://github.com/PerceptIn/ADU_Client.git/' not found
+```
+解决办法1：
+```
+git clone https://JulianLiao5@github.com/PerceptIn/ADU_Client.git
+```
+
+![git clone error](imgs/git/git_clone_issue.png "git clone error")
