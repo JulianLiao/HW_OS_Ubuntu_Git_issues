@@ -88,3 +88,23 @@ git clone https://JulianLiao5@github.com/PerceptIn/ADU_Client.git
 ```
 
 ![git clone error](imgs/git/git_clone_issue.png "git clone error")
+
+c.
+问题描述：
+```
+    当执行git pull时，报
+    remote: Repository not found.
+    fatal: repository 'https://github.com/PerceptIn/ADU_Client.git/' not found
+```
+
+尝试解决办法1（not work）
+```
+git remote set-url origin https://github.com/PerceptIn/ADU_Client.git/，仍然报错
+```
+
+解决办法2(work)
+```
+git remote set-url origin git@github.com:PerceptIn/ADU_Client.git
+```
+
+![git pull error](imgs/git/git_pull_error.png "git pull error")
