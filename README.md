@@ -108,3 +108,42 @@ git remote set-url origin git@github.com:PerceptIn/ADU_Client.git
 ```
 
 ![git pull error](imgs/git/git_pull_error.png "git pull error")
+
+## ssh issues
+
+a. 登录到miniPC后，opengl UI无法显示出来
+
+问题描述：
+
+miniPC没有独立显卡，Dell G3笔记本 和 联想X1笔记本通过[ssh -C -X -Y perceptin@192.168.8.11]登录到miniPC后，运行
+```bash
+$ cd PI_SDK_v1.5/modules/planning/bin
+$ ./run.sh （含--enable_visualization=true）
+```
+不能打开opengl UI，同时报以下错误，
+
+![OpenGL err](imgs/ssh/OpenGL_error.png "OpenGL err")
+
+原因：
+
+远程电脑的opengl版本与自己电脑的opengl版本不一致。
+
+miniPC（没有显卡）的opengl版本如下：
+
+![miniPC OpenGL version](imgs/ssh/miniPC_glxinfo_version.png "miniPC OpenGL version")
+
+其"OpenGL version string"为 "3.0 Mesa 18.0.5"。
+
+而Dell G3的opengl版本如下：
+
+![DellG3 OpenGL version](imgs/ssh/DellG3_glxinfo_version.png "DellG3 OpenGL version")
+
+其"OpenGL version string"为 "4.6.0 NVIDIA 410.78"。
+
+我的小米笔记本同样没有显卡，其opengl版本与miniPC的opengl版本是相一致的，如下：
+
+![MI OpenGL version](imgs/ssh/MI_glxinfo_version.png "MI OpenGL version")
+
+解决办法(work)：
+
+使用小米笔记本通过ssh -C -X -Y perceptin@192.168.8.11登录miniPC，就可以在小米本上正常显示OpenGL UI了。
