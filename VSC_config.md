@@ -8,4 +8,8 @@
 
 ```shell
 $ clang-format -style=Google -i file.cc  ## -i                        - Inplace edit <file>s, if specified.
+
+OR
+
+$ clang-format -style="{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}" -i file.cc  ## Use -style="{key: value, ...}" to set specific parameters
 ```
