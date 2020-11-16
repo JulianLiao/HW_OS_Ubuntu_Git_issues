@@ -109,6 +109,15 @@ git remote set-url origin git@github.com:PerceptIn/ADU_Client.git
 
 ![git pull error](imgs/git/git_pull_error.png "git pull error")
 
+d. 如何保存git的用户名和密码，不用每次做git pull 或者 git push都需要输入。
+
+```shell
+$ git config --global credential.helper store
+$ git pull
+Username: <type your username>
+Password: <type your password>
+```
+
 ## ssh issues
 
 a. 登录到miniPC后，opengl UI无法显示出来
