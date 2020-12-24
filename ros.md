@@ -11,8 +11,18 @@ $ roslaunch <package-name> <launch-filename> [args]  ## roslaunch会找到存在
 rosrun prototype:
 ```shell
 $ rosrun [package_name] [node_name]  ## rosrun可以不用知道package路径，而通过package_name直接启动它里面的node
-
 ```
+
+rospack prototype:
+
+查看是否有某个 package
+
+```shell
+$ rospack list | grep [package_name]
+```
+
+![rospack list](imgs/ros/rospack_list_package.png "rospack list")
+
 
 
 # ros topic
@@ -58,4 +68,33 @@ ros::Subscriber subscribe(const std::string& topic, uint32_t queue_size, <callba
 # queue_size
   incoming messages队列大小
   可以认为是第三个参数callback 被触发的参数队列大小，如果callback被触发的太频繁导致不能被处理得过来的话，roscpp就会把超过 queue_size消息给扔掉。
+```
+
+
+
+
+
+
+3i robotics的Delta-1A 通过rostopic 手法的消息类型并非自定义的消息类型，而是用的ros官方的消息类型 sensor_msgs/LaserScan.msg。
+
+
+
+
+# ros本身所包含的消息类型
+
+## sensor_msgs
+
+### sensor_msgs/LaserScan.msg, sensor_msgs/LaserScan.h
+
+```
+Header header  ## std_msgs/Header Header
+float32 angle_min
+float32 angle_max
+float32 angle_increment
+float32 time_increment
+float32 scan_time
+float32 range_min
+float32 range_max
+float32[] ranges
+float32[] intensities
 ```
