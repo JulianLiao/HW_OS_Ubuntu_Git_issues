@@ -118,6 +118,23 @@ Username: <type your username>
 Password: <type your password>
 ```
 
+e.
+问题描述：
+```
+    当执行git pull时，报
+    error: cannot lock ref 'refs/remotes/origin/feature/lidar_msg': is at xx buf expected xx
+    (unable to update local ref)
+```
+
+解决办法1（work）
+```
+git update-ref -d refs/remotes/origin/feature/lidar_msg
+
+note: 上面这行命令并不会影响远端分支
+```
+
+![git pull cannot lock ref](imgs/git/git_pull_cannot_lock_ref.png "git pull cannot lock ref")
+
 ## ssh issues
 
 a. 登录到miniPC后，opengl UI无法显示出来
